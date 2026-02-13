@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Letter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #d85a5a;
+      --bg-color: #fff5f5;
+      --border-color: #f8c7c7;
+      --text-color: #4a3636;
+      --shadow-color: rgba(0,0,0,0.1);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(216, 90, 90, 0.05) 0%, transparent 30%),
+        radial-gradient(circle at 90% 80%, rgba(216, 90, 90, 0.05) 0%, transparent 30%);
+    }
+    
+    .page-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 850px;
+      padding: 30px;
+    }
+    
+    .decoration-top {
+      margin-bottom: 20px;
+      width: 300px;
+      opacity: 0.8;
+    }
+    
+    .letter-container {
+      max-width: 650px;
+      padding: 50px;
+      background-color: #fff;
+      box-shadow: 0 10px 30px var(--shadow-color);
+      border-radius: 8px;
+      position: relative;
+      margin-bottom: 30px;
+    }
+    
+    .letter-container::before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      pointer-events: none;
+    }
+    
+    .letter-container::after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.02);
+      border-radius: 8px;
+      z-index: -1;
+    }
+    
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      color: var(--primary-color);
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+    
+    .date {
+      text-align: right;
+      margin-bottom: 30px;
+      font-style: italic;
+      color: #888;
+    }
+    
+    .greeting {
+      font-weight: 600;
+      margin-bottom: 25px;
+      font-size: 22px;
+    }
+    
+    .body-text {
+      margin-bottom: 30px;
+      text-align: justify;
+      font-size: 18px;
+    }
+    
+    .body-text p {
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .body-text p:first-letter {
+      font-size: 26px;
+      color: var(--primary-color);
+    }
+    
+    .closing {
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: right;
+      font-size: 20px;
+    }
+    
+    .signature {
+      text-align: right;
+      font-family: 'Dancing Script', cursive;
+      font-size: 28px;
+      margin-top: 10px;
+    }
+    
+    .heart {
+      color: var(--primary-color);
+      font-size: 24px;
+      display: inline-block;
+      animation: beat 1.5s infinite alternate;
+      transform-origin: center;
+    }
+    
+    .red-rose {
+      max-width: 80px;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      opacity: 0.7;
+      transform: rotate(15deg);
+    }
+    
+    .decoration-divider {
+      margin: 20px 0;
+      text-align: center;
+      color: var(--primary-color);
+      font-size: 20px;
+      letter-spacing: 10px;
+    }
+    
+    @keyframes beat {
+      to {
+        transform: scale(1.2);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .letter-container {
+        padding: 30px;
+        margin: 20px;
+      }
+      
+      h1 {
+        font-size: 32px;
+      }
+      
+      .body-text {
+        font-size: 16px;
+      }
+      
+      .decoration-top {
+        width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    <img class="decoration-top" src="https://public.youware.com/users-website-assets/prod/21075e37-eaa9-4594-a55e-8fbf665365dd/g500ab5eb90efe5e1c3b3ae76731e89604c15333777b0f7d9ce5db4198707ba7ee535bbc5ba7e6bd5fcaed841266f6f5197c838cd8bfede5d3f558c932aeb660f_640.png" alt="Decorative roses">
+    
+    <div class="letter-container">
+      <div class="date">November 26, 2025</div>
+      
+      <h1>My Dearest, Shabil</h1>
+      
+      <div class="greeting">My Beloved,</div>
+      
+      <div class="body-text">
+        <p>As I sit down to write these words, I find myself overwhelmed by the depth of my feelings for you. Every day since you entered my life has been illuminated with a brilliance I never knew possible. You have become the rhythm of my heartbeat, the very air I breathe.</p>
+        
+        <div class="decoration-divider">❦ ❦ ❦</div>
+        
+        <p>I cherish every moment we've shared—the laughter that echoes in my mind, the tender touches that linger on my skin, and the conversations that have bridged our souls. In your eyes, I've found a home I never knew I was searching for.</p>
+        
+        <p>Your strength inspires me, your kindness humbles me, and your love transforms me. You see me—truly see me—with all my flaws and imperfections, yet you choose to love me anyway. For that alone, I am eternally grateful.</p>
+        
+        <div class="decoration-divider">❦ ❦ ❦</div>
+        
+        <p>The world seems more vibrant with you in it. Colors appear brighter, music sounds sweeter, and even the mundane becomes magical. You've taught me to appreciate the small moments, to find joy in simplicity, and to love without reservation.</p>
+        
+        <p>I promise to stand by your side through whatever life brings our way. To hold your hand through stormy nights and dance with you under sunny skies. To love you fiercely and tenderly, completely and endlessly.</p>
+        
+        <div class="decoration-divider">❦ ❦ ❦</div>
+        
+        <p>My heart is yours, now and always. I love you more than words could ever express, though I'll spend a lifetime trying.</p>
+      </div>
+      
+      <div class="closing">Forever and always yours,</div>
+      
+      <div class="signature">With all my heart, Mac <span class="heart">❤</span></div>
+      
+      <img class="red-rose" src="stamp.png" alt="Red rose">
+    </div>
+  </div>
+</body>
+
+</html>
+
